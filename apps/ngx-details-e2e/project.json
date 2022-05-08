@@ -6,11 +6,11 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "apps/ngx-details-e2e/cypress.json",
-        "devServerTarget": "ngx-details:serve:development"
+        "devServerTarget": "ngx-details-demo:serve:development"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "ngx-details:serve:production"
+          "devServerTarget": "ngx-details-demo:serve:production"
         }
       }
     },
@@ -23,5 +23,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["ngx-details"]
+  "implicitDependencies": ["ngx-details-demo"]
 }
