@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "ngx-details": "apps/ngx-details",
+    "ngx-details-e2e": "apps/ngx-details-e2e"
+  }
+}
