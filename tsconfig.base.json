@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@yanis/ngx-details": ["libs/ngx-details/src/index.ts"]
+      "@ngx-yanis/ngx-details": ["libs/ngx-details/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

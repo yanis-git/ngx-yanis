@@ -15,11 +15,11 @@ This component is a11y friendly.
 ## Installation
 
 ```
-npm install --save @yanis/ngx-details
+npm install --save @ngx-yanis/ngx-details
 ```
 Then import module in your project:
 ```
-import { NgxDetailsModule } from '@yanis/ngx-details';
+import { NgxDetailsModule } from '@ngx-yanis/ngx-details';
 
 @NgModule({
   imports: [
