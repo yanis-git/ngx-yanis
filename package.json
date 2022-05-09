@@ -10,7 +10,13 @@
     "test": "nx test"
   },
   "private": false,
-  "keywords": ["Angular", "details", "accessibility", "a11y", "summary"],
+  "keywords": [
+    "Angular",
+    "details",
+    "accessibility",
+    "a11y",
+    "summary"
+  ],
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
@@ -21,6 +27,7 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "@nrwl/angular": "14.1.4",
+    "ngx-highlightjs": "^6.1.2",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"

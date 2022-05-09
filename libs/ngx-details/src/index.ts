@@ -1,3 +1,3 @@
 export * from './lib/ngx-details.module';
-export * from './lib/details/details.component';
-export * from './lib/summary/summary.component';
+export * from './lib/details/details.directive';
+export * from './lib/summary/summary.directive';

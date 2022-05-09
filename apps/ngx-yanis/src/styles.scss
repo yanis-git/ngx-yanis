@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~highlight.js/styles/github.css';
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('/assets/fonts/source-sans-pro-regular.woff2') format('woff2'),
+  url('/assets/fonts/source-sans-pro-regular.woff') format('woff');
+}
+
+
+html,body {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background: #f8f9f9;
+}

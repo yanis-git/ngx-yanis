@@ -1,0 +1,13 @@
+<p>Following details is it Open ? {{ isOpen ? 'Yes' : 'No' }}</p>
+
+<div class="lightbox">
+  <details ngxDetails (isOpen)="onOpenChange($event)">
+    <summary>I am the summary</summary>
+    <p>I am the details of the component.</p>
+  </details>
+</div>
+<p>On your <code>Component</code>, you can use the following code:</p>
+<ngx-code-snippet [code]="snippets.component"></ngx-code-snippet>
+
+<p>On your <code>HTML</code> file you can use the following code:</p>
+<ngx-code-snippet [code]="snippets.html"></ngx-code-snippet>
