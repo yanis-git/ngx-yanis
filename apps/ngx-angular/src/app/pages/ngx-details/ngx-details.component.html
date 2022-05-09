@@ -1,0 +1,8 @@
+<h2>Demo - Ngx-details</h2>
+
+<p>Following element is it Open ? {{ isFirstExempleIsOpen ? 'Yes' : 'No' }}</p>
+<ngx-details (isOpen)="firstExampleStateChange($event)">
+  <ngx-summary>Default Behavior</ngx-summary>
+  <p>By default you have collapsed version of detail tags.</p>
+</ngx-details>
+<p>ngx-details works!</p>
