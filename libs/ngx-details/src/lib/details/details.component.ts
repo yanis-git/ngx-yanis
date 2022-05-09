@@ -22,7 +22,7 @@ export class DetailsComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     if (!this.summary) {
-      throw new Error('ngx-details: You must provide a summary component');
+      throw 'ngx-details: You must provide a summary component';
     }
   }
 

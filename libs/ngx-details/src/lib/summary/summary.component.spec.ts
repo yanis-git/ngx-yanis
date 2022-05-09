@@ -21,4 +21,8 @@ describe('SummaryComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain uniq summary DOM element', () => {
+    expect(Array.from(fixture.nativeElement.querySelectorAll('summary')).length).toBe(1);
+  });
 });
