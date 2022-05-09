@@ -2,6 +2,7 @@
   "name": "@ngx-yanis/ngx-details",
   "version": "1.0.2",
   "private": false,
+  "keywords": ["Angular", "details", "accessibility", "a11y", "summary"],
   "publishConfig": {
     "access": "public"
   },
@@ -12,8 +13,5 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  },
-  "devDependencies": {
-
   }
 }

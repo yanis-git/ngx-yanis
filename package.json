@@ -1,6 +1,6 @@
 {
   "name": "nx-angular",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
@@ -9,7 +9,8 @@
     "build": "nx run-many --target=build --all",
     "test": "nx test"
   },
-  "private": true,
+  "private": false,
+  "keywords": ["Angular", "details", "accessibility", "a11y", "summary"],
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
