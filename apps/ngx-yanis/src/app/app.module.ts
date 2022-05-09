@@ -11,13 +11,15 @@ import { RouterModule } from '@angular/router';
       {
         path: 'ngx-details',
         loadChildren: () =>
-          import('./pages/ngx-details/ngx-details.module').then((m) => m.NgxDetailsModule),
+          import('./pages/ngx-details/ngx-details.module').then(
+            (m) => m.NgxDetailsModule
+          ),
       },
       {
         path: '',
         redirectTo: 'ngx-details',
         pathMatch: 'full',
-      }
+      },
     ]),
   ],
   providers: [],

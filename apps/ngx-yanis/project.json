@@ -1,27 +1,23 @@
 {
   "projectType": "application",
-  "sourceRoot": "apps/ngx-angular/src",
+  "sourceRoot": "apps/ngx-yanis/src",
   "prefix": "nx-angular",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/ngx-angular",
-        "index": "apps/ngx-angular/src/index.html",
-        "main": "apps/ngx-angular/src/main.ts",
-        "polyfills": "apps/ngx-angular/src/polyfills.ts",
-        "tsConfig": "apps/ngx-angular/tsconfig.app.json",
+        "outputPath": "dist/apps/ngx-yanis",
+        "index": "apps/ngx-yanis/src/index.html",
+        "main": "apps/ngx-yanis/src/main.ts",
+        "polyfills": "apps/ngx-yanis/src/polyfills.ts",
+        "tsConfig": "apps/ngx-yanis/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/ngx-angular/src/favicon.ico",
-          "apps/ngx-angular/src/assets"
+          "apps/ngx-yanis/src/favicon.ico",
+          "apps/ngx-yanis/src/assets"
         ],
-        "styles": [
-          "apps/ngx-angular/src/styles.scss"
-        ],
+        "styles": ["apps/ngx-yanis/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -40,8 +36,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/ngx-angular/src/environments/environment.ts",
-              "with": "apps/ngx-angular/src/environments/environment.prod.ts"
+              "replace": "apps/ngx-yanis/src/environments/environment.ts",
+              "with": "apps/ngx-yanis/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -61,10 +57,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "ngx-angular:build:production"
+          "browserTarget": "ngx-yanis:build:production"
         },
         "development": {
-          "browserTarget": "ngx-angular:build:development"
+          "browserTarget": "ngx-yanis:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -72,25 +68,23 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ngx-angular:build"
+        "browserTarget": "ngx-yanis:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/ngx-angular/**/*.ts",
-          "apps/ngx-angular/**/*.html"
+          "apps/ngx-yanis/**/*.ts",
+          "apps/ngx-yanis/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/ngx-angular"
-      ],
+      "outputs": ["coverage/apps/ngx-yanis"],
       "options": {
-        "jestConfig": "apps/ngx-angular/jest.config.ts",
+        "jestConfig": "apps/ngx-yanis/jest.config.ts",
         "passWithNoTests": true
       }
     }

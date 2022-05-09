@@ -1,7 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "ngx-angular": "apps/ngx-angular",
-    "ngx-details": "libs/ngx-details"
+    "ngx-details": "libs/ngx-details",
+    "ngx-yanis": "apps/ngx-yanis"
   }
 }

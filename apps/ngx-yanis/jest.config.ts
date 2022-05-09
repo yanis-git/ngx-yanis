@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'ngx-angular',
+  displayName: 'ngx-yanis',
   preset: '../../jest.preset.ts',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/ngx-angular',
+  coverageDirectory: '../../coverage/apps/ngx-yanis',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

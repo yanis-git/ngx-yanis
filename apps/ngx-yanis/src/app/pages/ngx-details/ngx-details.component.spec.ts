@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NgxDetailsComponent } from './ngx-details.component';
-import {NgxDetailsModule} from '@ngx-yanis/ngx-details';
+import { NgxDetailsModule } from '@ngx-yanis/ngx-details';
 
 describe('NgxDetailsComponent', () => {
   let component: NgxDetailsComponent;
@@ -10,7 +10,7 @@ describe('NgxDetailsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [NgxDetailsComponent],
-      imports: [NgxDetailsModule]
+      imports: [NgxDetailsModule],
     }).compileComponents();
   });
 

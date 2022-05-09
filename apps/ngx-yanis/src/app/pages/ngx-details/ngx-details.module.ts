@@ -8,10 +8,6 @@ const routes: Routes = [{ path: '', component: NgxDetailsComponent }];
 
 @NgModule({
   declarations: [NgxDetailsComponent],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    NgxLibDetailsModule
-  ],
+  imports: [CommonModule, RouterModule.forChild(routes), NgxLibDetailsModule],
 })
 export class NgxDetailsModule {}
