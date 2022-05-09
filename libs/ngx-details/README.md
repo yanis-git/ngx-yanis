@@ -1,6 +1,5 @@
 # ngx-details
-
-Angular Wrapper for `details` html tags.
+Angular wrapper for [details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) native DOM element.
 
 ## Compatibility
 * Angular 13.x
@@ -9,11 +8,9 @@ Angular Wrapper for `details` html tags.
 * Firefox
 
 ## Accessibility
-
 This component is a11y friendly.
 
 ## Installation
-
 ```
 npm install --save @ngx-yanis/ngx-details
 ```
@@ -31,7 +28,6 @@ export class AppModule { }
 ```
 
 ## Usage
-
 ```
 <ngx-details>
   <ngx-summary> Text which will be display to summarize the content. </ngx-summary>
@@ -49,7 +45,5 @@ To control the details tag, you can use the following input/output:
 ```
 <ngx-details [(open)]="someBooleanVariable">
 ```
-
-
 ## General Information
-This library is powered by [Nx](https://nx.dev/angular)
+This library is powered by [Nx](https://nx.dev/angular). Source are available on [Github](https://github.com/yanis-git/ngx-yanis/tree/main/libs/ngx-details).

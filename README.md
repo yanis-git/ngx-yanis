@@ -1,6 +1,4 @@
-# ngx-details 
-
-Angular Wrapper for `details` html tags.
+# ngx-yanis - Set of Angular components 
 
 ## Compatibility
  * Angular 13.x
@@ -9,47 +7,13 @@ Angular Wrapper for `details` html tags.
  * Firefox
 
 ## Accessibility
+All this component is accessible for disabled users.
 
-This component is a11y friendly.
-
-## Installation
-
-```
-npm install --save @ngx-yanis/ngx-details
-```
-Then import module in your project:
-```
-import { NgxDetailsModule } from '@ngx-yanis/ngx-details';
-
-@NgModule({
-  imports: [
-    ...
-    NgxDetailsModule
-  ]
-})
-export class AppModule { }
-```
-
-## Usage
-
-```
-<ngx-details>
-  <ngx-summary> Text which will be display to summarize the content. </ngx-summary>
-  <p> the rest of this content will be displayed only when user interact with the details tag. </p>
-</ngx-details>
-```
-
-## Available Input/Output
-To know if the details tag is open or closed, you can use the following input/output:
-```
-<ngx-details (isOpen)="myCallback($event)">
-```
-
-To control the details tag, you can use the following input/output:
-```
-<ngx-details [(open)]="someBooleanVariable">
-```
-
+## Documentation
+* [@ngx-yanis/ngx-details](./libs/ngx-details/README.md) - Angular wrapper for [details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) native DOM element.
 
 ## General Information
-This library is powered by [Nx](https://nx.dev/angular)
+These projects are powered by [Nx Monorepo](https://nx.dev/angular)
+
+## Author
+Made with :heart: by [Yanis](https://twitter.com/moufasa94), let me know if you have any questions, i will be happy to reveive your feedback.
