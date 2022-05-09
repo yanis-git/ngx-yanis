@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import {NgxDetailsModule} from '@ngx-yanis/ngx-details';
+import { NgxDetailsModule } from '@ngx-yanis/ngx-details';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

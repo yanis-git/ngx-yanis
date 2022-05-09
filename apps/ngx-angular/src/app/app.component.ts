@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  isFirstExempleIsOpen = false
+  isFirstExempleIsOpen = false;
 
   firstExampleStateChange(isOpen: boolean) {
     this.isFirstExempleIsOpen = isOpen;
