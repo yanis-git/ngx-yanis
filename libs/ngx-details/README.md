@@ -30,7 +30,7 @@ export class AppModule { }
 ## Usage
 ```
 <details ngxDetails>
-  <ngx-summary> Text which will be display to summarize the content. </ngx-summary>
+  <summary> Text which will be display to summarize the content. </summary>
   <p> the rest of this content will be displayed only when user interact with the details tag. </p>
 </details>
 ```
