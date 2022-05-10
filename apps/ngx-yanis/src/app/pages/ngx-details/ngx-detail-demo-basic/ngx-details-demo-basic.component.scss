@@ -7,13 +7,7 @@
   box-shadow: 2px 2px 5px #0003;
   margin: 16px 0;
   width: 100%;
-  display: flex;
-  justify-content: left;
-}
-
-code {
-  background: #dbdbdb4d;
-  border-radius: 4px;
-  padding: 4px;
-  font-family: 'Source Sans Pro', serif;
+  > p {
+    margin: 0;
+  }
 }

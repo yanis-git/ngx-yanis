@@ -1,4 +1,4 @@
-@import '~highlight.js/styles/github.css';
+@import '~highlight.js/styles/a11y-dark.css';
 /* source-sans-pro-regular - latin */
 @font-face {
   font-family: 'Source Sans Pro';
@@ -17,4 +17,19 @@ html,body {
   margin: 0;
   padding: 0;
   background: #f8f9f9;
+  p, details, li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  code {
+    font-size: 1.5rem;
+  }
+
+  code {
+    background: rgb(235, 237, 240);
+    color: rgb(28, 30, 33);
+    border-radius: 4px;
+    padding: 4px;
+    font-family: 'Source Sans Pro', serif;
+  }
 }
