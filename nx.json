@@ -1,5 +1,5 @@
 {
-  "npmScope": "nx-angular",
+  "npmScope": "ngx-yanis",
   "affected": {
     "defaultBase": "master"
   },
