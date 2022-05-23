@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ngx-yanis/ngx-details": ["libs/ngx-details/src/index.ts"]
+      "@ngx-yanis/ngx-details": ["libs/ngx-details/src/index.ts"],
+      "@ngx-yanis/ngx-youtube-embed": ["libs/ngx-youtube-embed/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

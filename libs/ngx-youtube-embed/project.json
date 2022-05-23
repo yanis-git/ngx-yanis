@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/ngx-youtube-embed/src",
+  "prefix": "ngx-yanis",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ngx-youtube-embed"],
+      "options": {
+        "jestConfig": "libs/ngx-youtube-embed/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ngx-youtube-embed/**/*.ts",
+          "libs/ngx-youtube-embed/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
