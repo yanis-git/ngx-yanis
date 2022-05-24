@@ -1,6 +1,6 @@
 <section>
   <ngx-youtube-player [youtubeId]="'Bc_RrCNWTyo'" (readyChange)="onReadyChange($event)">
-    <img class="cover" [ngClass]="ready ? 'loaded' : ''" src="https://i.ytimg.com/vi/Bc_RrCNWTyo/maxresdefault.jpg"
+    <img class="cover" [ngClass]="{loaded: isReady}" src="https://i.ytimg.com/vi/Bc_RrCNWTyo/maxresdefault.jpg"
          alt="">
   </ngx-youtube-player>
 </section>

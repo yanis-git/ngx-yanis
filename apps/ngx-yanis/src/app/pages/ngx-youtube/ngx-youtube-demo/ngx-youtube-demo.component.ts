@@ -7,9 +7,9 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
   styleUrls: ['./ngx-youtube-demo.component.scss'],
 })
 export class NgxYoutubeDemoComponent {
-  ready = false;
+  isReady = false;
 
   onReadyChange($event: boolean) {
-    this.ready = $event;
+    this.isReady = $event;
   }
 }
