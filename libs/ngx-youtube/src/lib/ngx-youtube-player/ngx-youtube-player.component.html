@@ -1,7 +1,7 @@
 <div class="container">
   <div #youtube></div>
   <div class="overlay" [ngClass]="{loaded: (isCoverDisplay$ | async) === true}">
-    <img [src]="'https://i.ytimg.com/vi/' + youtubeId + '/maxresdefault.jpg'" alt="">
+    <ng-content select=".cover"></ng-content>
     <button (click)="togglePlayer()" *ngIf="(isCoverDisplay$ | async)">
       <ng-container *ngIf="(isPlaying$ | async) === false">
         <ng-container *ngTemplateOutlet="defaultPlayButton"></ng-container>

@@ -1,9 +1,15 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
   selector: 'nx-angular-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <nav></nav>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <footer></footer>
+  `,
 })
-export class AppComponent {}
+export class AppComponent {
+}

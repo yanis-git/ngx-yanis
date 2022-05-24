@@ -1,5 +1,5 @@
 import {Injectable, OnDestroy} from '@angular/core';
-import {BehaviorSubject, delay, filter, map, Observable, Subject, Subscription, take} from 'rxjs';
+import {BehaviorSubject, delay, distinctUntilChanged, filter, map, Observable, Subject, Subscription, take} from 'rxjs';
 import {Options, YouTubePlayer as YoutubePlayType} from 'youtube-player/dist/types';
 import YouTubePlayer from 'youtube-player';
 import {defaultPlayerVars, PlayerState} from './Type';
@@ -63,8 +63,8 @@ export class NgxYoutubePlayerService implements OnDestroy {
   get isPlaying$(): Observable<boolean> {
     return this._playerState$
       .pipe(
-        filter(state => state === PlayerState.PLAYING),
-        map(state => state === PlayerState.PLAYING && this._isFullyReady)
+        map(state => state === PlayerState.PLAYING && this._isFullyReady),
+        distinctUntilChanged()
       );
   }
 
