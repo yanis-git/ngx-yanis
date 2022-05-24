@@ -2,7 +2,12 @@
   <div #youtube></div>
   <div class="overlay" [ngClass]="{loaded: (isCoverDisplay$ | async) === true}">
     <ng-content select=".cover"></ng-content>
-    <button (click)="togglePlayer()" *ngIf="(isCoverDisplay$ | async)">
+    <button
+      (click)="togglePlayer()"
+      *ngIf="(isCoverDisplay$ | async)"
+      [attr.aria-pressed]="(isPlaying$ | async)"
+      [attr.aria-label]="(isPlaying$ | async) === false ? 'play the video' : 'pause the video'"
+    >
       <ng-container *ngIf="(isPlaying$ | async) === false">
         <ng-container *ngTemplateOutlet="defaultPlayButton"></ng-container>
       </ng-container>
