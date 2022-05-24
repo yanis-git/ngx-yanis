@@ -80,7 +80,7 @@ export class NgxYoutubePlayerService implements OnDestroy {
     });
     // Goal here is to hide the Youtube UI from screen reader and keyboard navigation.
     this._player.getIframe().then(iframe => {
-      iframe.tabIndex = 1;
+      iframe.tabIndex = -1;
       iframe.setAttribute('aria-hidden', 'true');
     });
   }
