@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NgxYoutubeComponent } from './ngx-youtube.component';
+import {NgxYoutubeComponent} from './ngx-youtube.component';
+import {NgxYoutubeDemoComponent} from './ngx-youtube-demo/ngx-youtube-demo.component';
 
 describe('NgxYoutubeComponent', () => {
   let component: NgxYoutubeComponent;
@@ -8,7 +9,7 @@ describe('NgxYoutubeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NgxYoutubeComponent],
+      declarations: [NgxYoutubeComponent, NgxYoutubeDemoComponent],
     }).compileComponents();
   });
 

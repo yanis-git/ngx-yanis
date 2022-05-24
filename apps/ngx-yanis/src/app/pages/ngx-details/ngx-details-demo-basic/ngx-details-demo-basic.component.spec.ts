@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NgxDetailsDemoBasicComponent } from './ngx-details-demo-basic.component';
+import {NgxDetailsDemoBasicComponent} from './ngx-details-demo-basic.component';
+import {CodeSnippetModule} from '../../../features/code-snippet/code-snippet.module';
 
 describe('NgxDetailDemoBasicComponent', () => {
   let component: NgxDetailsDemoBasicComponent;
@@ -9,6 +10,7 @@ describe('NgxDetailDemoBasicComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [NgxDetailsDemoBasicComponent],
+      imports: [CodeSnippetModule.forRoot()],
     }).compileComponents();
   });
 

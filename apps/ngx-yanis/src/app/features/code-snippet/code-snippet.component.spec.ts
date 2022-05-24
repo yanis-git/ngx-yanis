@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CodeSnippetComponent } from './code-snippet.component';
+import {CodeSnippetComponent} from './code-snippet.component';
+import {HIGHLIGHT_OPTIONS, HighlightModule} from 'ngx-highlightjs';
 
 describe('CodeSnippetComponent', () => {
   let component: CodeSnippetComponent;
@@ -9,6 +10,20 @@ describe('CodeSnippetComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [CodeSnippetComponent],
+      imports: [HighlightModule],
+      providers: [
+        {
+          provide: HIGHLIGHT_OPTIONS,
+          useValue: {
+            coreLibraryLoader: () => import('highlight.js/lib/core'),
+            languages: {
+              typescript: () => import('highlight.js/lib/languages/typescript'),
+              css: () => import('highlight.js/lib/languages/css'),
+              xml: () => import('highlight.js/lib/languages/xml'),
+            },
+          },
+        },
+      ]
     }).compileComponents();
   });
 
