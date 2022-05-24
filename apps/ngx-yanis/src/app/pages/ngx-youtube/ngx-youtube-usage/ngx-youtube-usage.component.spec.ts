@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NgxYoutubeUsageComponent } from './ngx-youtube-usage.component';
+import {NgxYoutubeUsageComponent} from './ngx-youtube-usage.component';
+import {CodeSnippetModule} from '../../../features/code-snippet/code-snippet.module';
 
 describe('NgxYoutubeUsageComponent', () => {
   let component: NgxYoutubeUsageComponent;
@@ -9,6 +10,7 @@ describe('NgxYoutubeUsageComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [NgxYoutubeUsageComponent],
+      imports: [CodeSnippetModule.forRoot()]
     }).compileComponents();
   });
 

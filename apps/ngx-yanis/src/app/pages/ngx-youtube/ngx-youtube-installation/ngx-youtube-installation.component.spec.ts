@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NgxYoutubeInstallationComponent } from './ngx-youtube-installation.component';
+import {NgxYoutubeInstallationComponent} from './ngx-youtube-installation.component';
+import {CodeSnippetModule} from '../../../features/code-snippet/code-snippet.module';
 
 describe('NgxYoutubeInstallationComponent', () => {
   let component: NgxYoutubeInstallationComponent;
@@ -9,6 +10,7 @@ describe('NgxYoutubeInstallationComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [NgxYoutubeInstallationComponent],
+      imports: [CodeSnippetModule.forRoot()]
     }).compileComponents();
   });
 
