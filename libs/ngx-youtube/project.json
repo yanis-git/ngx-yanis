@@ -1,22 +1,22 @@
 {
   "projectType": "library",
-  "sourceRoot": "libs/ngx-details/src",
+  "sourceRoot": "libs/ngx-youtube/src",
   "prefix": "ngx",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",
       "outputs": [
-        "dist/libs/ngx-details"
+        "dist/libs/ngx-youtube"
       ],
       "options": {
-        "project": "libs/ngx-details/ng-package.json"
+        "project": "libs/ngx-youtube/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/ngx-details/tsconfig.lib.prod.json"
+          "tsConfig": "libs/ngx-youtube/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/ngx-details/tsconfig.lib.json"
+          "tsConfig": "libs/ngx-youtube/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
@@ -24,10 +24,10 @@
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/libs/ngx-details"
+        "coverage/libs/ngx-youtube"
       ],
       "options": {
-        "jestConfig": "libs/ngx-details/jest.config.ts",
+        "jestConfig": "libs/ngx-youtube/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -35,8 +35,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/ngx-details/**/*.ts",
-          "libs/ngx-details/**/*.html"
+          "libs/ngx-youtube/**/*.ts",
+          "libs/ngx-youtube/**/*.html"
         ]
       }
     }

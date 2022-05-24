@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'ngx-youtube-embed',
+  displayName: 'ngx-youtube',
   preset: '../../jest.preset.ts',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/libs/ngx-youtube-embed',
+  coverageDirectory: '../../coverage/libs/ngx-youtube',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

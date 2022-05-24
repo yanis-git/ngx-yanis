@@ -3,6 +3,6 @@
   "projects": {
     "ngx-details": "libs/ngx-details",
     "ngx-yanis": "apps/ngx-yanis",
-    "ngx-youtube-embed": "libs/ngx-youtube-embed"
+    "ngx-youtube": "libs/ngx-youtube"
   }
 }
