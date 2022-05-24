@@ -1,5 +1,10 @@
 # ngx-yanis - Set of Angular components
 
+## Live demo
+
+* [@ngx-yanis/ngx-details](https://ngx-yanis.netlify.app/ngx-details) - Collapsable Details.
+* [@ngx-yanis/ngx-youtube](https://ngx-yanis.netlify.app/ngx-youtube) - background and decorative youtube video.
+
 ## Compatibility
 
 * Angular 13.x
