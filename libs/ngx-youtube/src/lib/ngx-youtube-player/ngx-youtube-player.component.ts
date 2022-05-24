@@ -1,6 +1,8 @@
 import {AfterViewInit, Component, ElementRef, Input, ViewChild} from '@angular/core';
-import YouTubePlayer from 'youtube-player';
 import {YouTubePlayer as YoutubePlayType} from 'youtube-player/dist/types';
+import YouTubePlayer from 'youtube-player';
+
+declare const YT: { PlayerState: { BUFFERING: number, CUED: number, ENDED: number, PAUSED: number, PLAYING: number, UNSTARTED: number } };
 
 @Component({
   selector: 'ngx-youtube-player',
@@ -12,12 +14,38 @@ export class NgxYoutubePlayerComponent implements AfterViewInit {
   @ViewChild('youtube') frame!: ElementRef<HTMLElement>;
   private player!: YoutubePlayType;
 
+  public isPlaying = false;
+
   ngAfterViewInit() {
+    this.initializePlayer();
+    this.bindPlayerStateChange();
+
+    if (!this.isPreferReduceMotion()) {
+      this.player.playVideo();
+    }
+
+  }
+
+  onToggleBackground() {
+    if (this.isPlaying) {
+      this.player.pauseVideo();
+    } else {
+      this.player.playVideo();
+    }
+  }
+
+  private isPreferReduceMotion(): boolean {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  private initializePlayer() {
     this.player = YouTubePlayer(this.frame.nativeElement, {
       width: '100%',
       height: '100%',
       playerVars: {
         color: "white",
+        videoId: this.youtubeId,
+        playlist: this.youtubeId,
         iv_load_policy: 3,
         rel: 0,
         playsinline: 1,
@@ -25,10 +53,20 @@ export class NgxYoutubePlayerComponent implements AfterViewInit {
         controls: 0,
         showinfo: 0,
         widget: 1,
-        modestbranding: 1
+        modestbranding: 1,
+        loop: 1,
+        mute: 1,
       } as any
     });
-    this.player.loadVideoById(this.youtubeId);
-    this.player.playVideo();
+  }
+
+  private bindPlayerStateChange() {
+    this.player.on('stateChange', (event) => {
+      this.isPlaying = event.data === YT.PlayerState.PLAYING;
+      if (event.data === YT.PlayerState.ENDED) {
+        this.player.seekTo(0, true);
+        this.player.playVideo();
+      }
+    });
   }
 }

@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {NgxYoutubeDemoComponent} from './ngx-youtube-demo/ngx-youtube-demo.component';
 import {NgxYoutubeComponent} from './ngx-youtube.component';
-import {NgxYoutubePlayerModule} from '../../../../../../libs/ngx-youtube/src';
+import {NgxYoutubePlayerModule} from '@ngx-yanis/ngx-youtube';
 
 const routes: Routes = [{
   path: '',

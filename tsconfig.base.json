@@ -10,14 +10,24 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ngx-yanis/ngx-details": ["libs/ngx-details/src/index.ts"],
-      "@ngx-yanis/ngx-youtube-embed": ["libs/ngx-youtube-embed/src/index.ts"]
+      "@ngx-yanis/ngx-details": [
+        "libs/ngx-details/src/index.ts"
+      ],
+      "@ngx-yanis/ngx-youtube": [
+        "libs/ngx-youtube/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
