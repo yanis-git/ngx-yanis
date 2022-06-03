@@ -2,13 +2,19 @@
   "name": "@ngx-yanis/ngx-details",
   "version": "1.0.3",
   "private": false,
-  "keywords": ["Angular", "details", "accessibility", "a11y", "summary"],
+  "keywords": [
+    "Angular",
+    "details",
+    "accessibility",
+    "a11y",
+    "summary"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": "^13.3.0",
-    "@angular/core": "^13.3.0",
+    "@angular/common": "^13 | ^14",
+    "@angular/core": "^13 | ^14",
     "rxjs": "^7.5.5"
   },
   "dependencies": {
