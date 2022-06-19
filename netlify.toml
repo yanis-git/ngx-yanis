@@ -1,6 +1,6 @@
 [build]
   publish = "dist/apps/ngx-yanis"
-  command = "npm run build"
+  command = "yarn build"
 [[redirects]]
   from = "/*"
   to = "/index.html"
