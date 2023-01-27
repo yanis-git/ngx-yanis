@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
   displayName: 'ngx-details',
   preset: '../../jest.preset.js',

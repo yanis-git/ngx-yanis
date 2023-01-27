@@ -1,4 +1,5 @@
 {
+  "name": "ngx-yanis",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/ngx-yanis/src",
@@ -6,9 +7,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/ngx-yanis",
         "index": "apps/ngx-yanis/src/index.html",
@@ -20,9 +19,7 @@
           "apps/ngx-yanis/src/favicon.ico",
           "apps/ngx-yanis/src/assets"
         ],
-        "styles": [
-          "apps/ngx-yanis/src/styles.scss"
-        ],
+        "styles": ["apps/ngx-yanis/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -87,9 +84,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/ngx-yanis"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/apps/ngx-yanis"],
       "options": {
         "jestConfig": "apps/ngx-yanis/jest.config.ts",
         "passWithNoTests": true

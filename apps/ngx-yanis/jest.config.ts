@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
   displayName: 'ngx-yanis',
   preset: '../../jest.preset.js',
