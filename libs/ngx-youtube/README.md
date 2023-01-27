@@ -4,7 +4,7 @@ Angular Library to play youtube bakground video.
 
 ## Compatibility
 
-* Angular 13.x
+* Angular 13.x to 15.x
 * Chrome
 * Edge
 * Firefox
