@@ -7,7 +7,8 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx run-many --target=serve --all",
     "build": "nx run-many --target=build --all",
-    "test": "nx test"
+    "lint": "nx run-many --target=lint --all",
+    "test": "nx run-many --target=test --all"
   },
   "private": false,
   "keywords": [
