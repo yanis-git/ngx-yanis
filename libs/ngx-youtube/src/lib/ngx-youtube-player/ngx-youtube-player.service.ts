@@ -76,7 +76,13 @@ export class NgxYoutubePlayerService implements OnDestroy {
     this._player = PlayerFactory(element, {
       width: '100%',
       height: '100%',
-      playerVars: {videoId: youtubeId, playlist: youtubeId, ...defaultPlayerVars, ...options} as any
+      playerVars: {
+        videoId: youtubeId,
+        playlist: youtubeId,
+        ...defaultPlayerVars,
+        ...options,
+        origin: window.location.href
+      } as any
     });
     // Goal here is to hide the Youtube UI from screen reader and keyboard navigation.
     this._player.getIframe().then(iframe => {

@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "projects": {
-    "ngx-details": "libs/ngx-details",
-    "ngx-yanis": "apps/ngx-yanis",
-    "ngx-youtube": "libs/ngx-youtube"
-  }
-}
