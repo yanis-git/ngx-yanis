@@ -4,7 +4,7 @@ Angular wrapper for [details](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 ## Compatibility
 
-* Angular 13.x to 15.x
+* Angular 16.x
 * Chrome
 * Edge
 * Firefox

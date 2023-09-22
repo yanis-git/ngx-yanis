@@ -7,7 +7,7 @@
 
 ## Compatibility
 
-* Angular 13.x
+* Angular 16.x
 * Chrome
 * Edge
 * Firefox
