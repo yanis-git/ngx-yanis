@@ -14,6 +14,10 @@ Angular Library to play youtube bakground video.
 This component is a11y friendly. It respect reduced motion option from browser setting and include toggle button to
 play/pause the video.
 
+## Demo
+
+You can see a live demo [here](https://ngx-yanis.netlify.app/ngx-youtube).
+
 ## Installation
 
 ```

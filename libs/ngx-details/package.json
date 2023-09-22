@@ -1,6 +1,6 @@
 {
   "name": "@ngx-yanis/ngx-details",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "private": false,
   "keywords": [
     "Angular",
@@ -13,8 +13,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": "^13 | ^14 | ^15",
-    "@angular/core": "^13 | ^14 | ^15",
+    "@angular/common": "^13 | ^14 | ^15 | ^16",
+    "@angular/core": "^13 | ^14 | ^15 | ^16",
     "rxjs": "^7.5.5"
   },
   "dependencies": {

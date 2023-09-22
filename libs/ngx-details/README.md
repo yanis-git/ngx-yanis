@@ -13,6 +13,10 @@ Angular wrapper for [details](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 This component is a11y friendly.
 
+## Demo
+
+You can see a live demo [here](https://ngx-yanis.netlify.app/ngx-details).
+
 ## Installation
 
 ```
