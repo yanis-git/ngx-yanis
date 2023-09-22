@@ -9,5 +9,5 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CodeSnippetComponent {
-  @Input() code: string = '';
+  @Input() code = '';
 }
